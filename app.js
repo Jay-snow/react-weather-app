@@ -5,6 +5,15 @@ const e = React.createElement;
 const api_url =
   "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=bc29f70f91ce3ca5a066b994763e3502";
 
+
+class NavBar extends React.Component {
+  render(){
+    return (
+      <p> TEST!</p>
+    )
+  }
+}
+
 class StartButton extends React.Component {
   constructor(props) {
     super(props);
@@ -211,7 +220,7 @@ class StartButton extends React.Component {
   }
 }
 
-const domContainer = document.querySelector("#activate");
+const domContainer = document.querySelector("#app");
 
 const root = ReactDOM.createRoot(domContainer);
 
