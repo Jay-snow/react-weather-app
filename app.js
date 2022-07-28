@@ -56,15 +56,12 @@ class DailyWeather extends React.Component {
     // await navigator.geolocation.getCurrentPosition(await this.getLocation);
 
     let position = await getLongAndLat();
-
     let url_query = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=bc29f70f91ce3ca5a066b994763e3502`;
-
     //Make the axios call
     axios.get(url_query).then(
       (response) => {
         //Store the entire response
         this.setState({ api_response: response.data.list });
-        console.log(response.data.list)
       },
       (error) => {
         console.log(error);
@@ -95,17 +92,12 @@ class DailyWeather extends React.Component {
               <p>
                 <span className="daily-max">{Math.round(item.main.temp_max)} &#176;</span> <span className="daily-low">{Math.round(item.main.temp_min)} &#176;</span>
               </p>
-              <p>{item.weather.description}</p>
+              <small style={{textTransform: "capitalize"}}>{item.weather[0].description}</small>
             </div>
           </section>
         );
         date_already_used.push(item.dt_txt.slice(0,10))
       }
-
-      
-
-      
-      console.log(date_already_used)
     }
 
     return <section className="daily-card-container">

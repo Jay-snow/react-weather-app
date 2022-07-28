@@ -33,6 +33,27 @@ main {
     max-width: 600px;
     color: white;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 }
 
 .text-icon-wrapper {
@@ -145,7 +166,10 @@ main {
   display:flex;
   flex-direction: row;
   overflow-x: scroll;
+  padding-bottom:10px;
 }
+
+
 
 
 .daily-card {
