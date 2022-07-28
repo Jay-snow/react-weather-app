@@ -10,7 +10,10 @@
 
 3. Introduce REACTjs [x]
 4. Convert sunrise and sunshine to time [x]
-5. Externalize CSS. Maybe this is time to mess around with sass?
+5. Externalize CSS. [x]
+6. Make time update
+7. Host on marcussnow.dev
+8. Consider how it should look on desktop
 
 
 # INfo
@@ -20,3 +23,4 @@ https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=bc29f70f91c
 # Post Project To Do
 1. Look more into promises. Use the navigator to practice and understand.
 2. Converting time from (UTC?) in javascript
+3. Look into SASS

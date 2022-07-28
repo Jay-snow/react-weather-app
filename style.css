@@ -13,8 +13,8 @@ main {
     font-family: "Poppins", sans-serif;
   }
 
-  div {
-    min-width: 300px;
+  #app {
+    max-width: 300px;
     color: white;
   }
 }
@@ -29,8 +29,8 @@ main {
     font-family: "Poppins", sans-serif;
   }
 
-  div {
-    min-width: 600px;
+  #app {
+    max-width: 600px;
     color: white;
   }
 }
@@ -137,4 +137,34 @@ main {
 
 .text-center {
   text-align: center;
+}
+
+/* DAILY SECTION */
+
+.daily-card-container {
+  display:flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+
+.daily-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  min-width:150px;
+  margin-right:10px;
+}
+
+ .daily-card p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.daily-max {
+  font-size:1.1rem;
+}
+
+.daily-low {
+  font-size:0.9rem;
+  color:lightgray;
 }
