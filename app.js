@@ -22,7 +22,20 @@ class DailyWeather extends React.Component {
     super(props);
     this.state = {
       api_response: "",
+      five_day_rendered: false,
     };
+  }
+
+
+  loadingText(){
+
+    if (this.state.five_day_rendered === false){
+      return(
+        <h3 style={{textAlign: 'center'}}>Loading Forecast Data...</h3>
+      )
+    } else {
+      return ''
+    }
   }
 
   componentDidMount() {
@@ -67,6 +80,8 @@ class DailyWeather extends React.Component {
         console.log(error);
       }
     );
+    console.log(this.state.five_day_rendered)
+    this.state.five_day_rendered = true;
   }
 
 
@@ -99,8 +114,10 @@ class DailyWeather extends React.Component {
         date_already_used.push(item.dt_txt.slice(0,10))
       }
     }
+    
 
     return <section className="daily-card-container">
+      {this.loadingText()}
       {final}
       </section>;
   }

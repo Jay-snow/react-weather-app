@@ -35,25 +35,24 @@ main {
   }
 
   /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 .text-icon-wrapper {
@@ -163,32 +162,29 @@ main {
 /* DAILY SECTION */
 
 .daily-card-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
-
-
-
 
 .daily-card {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  min-width:150px;
-  margin-right:10px;
+  min-width: 150px;
+  margin-right: 10px;
 }
 
- .daily-card p {
+.daily-card p {
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .daily-max {
-  font-size:1.1rem;
+  font-size: 1.1rem;
 }
 
 .daily-low {
-  font-size:0.9rem;
-  color:lightgray;
+  font-size: 0.9rem;
+  color: lightgray;
 }
