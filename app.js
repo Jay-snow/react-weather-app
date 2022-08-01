@@ -80,7 +80,6 @@ class DailyWeather extends React.Component {
         console.log(error);
       }
     );
-    console.log(this.state.five_day_rendered)
     this.state.five_day_rendered = true;
   }
 
